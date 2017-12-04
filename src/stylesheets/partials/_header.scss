@@ -1,0 +1,70 @@
+header {
+    @media screen and (min-width: 951px) {
+        .usa-nav-container:after {
+            clear: none !important;
+            content: none;
+        }
+    }
+    &.scrolled .usa-nav-container {
+        height: 6.25rem;
+        align-items: center;
+        padding-bottom: 0;
+        .logo { height: 3.25rem; width: 15rem; }
+    }
+    .usa-nav-container {
+        height: $header__height;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        transition: height .5s, justify-content .5s;
+    }
+    &.header--one {
+        background: white;
+    }
+    &.sticky {
+        position: fixed;
+        top: 0; 
+    }
+    &.sticky:before, &.sticky:after {
+        content: '';
+        display: table; 
+    }
+
+    .usa-navbar {
+        height: auto;
+        .usa-logo {
+            top: 0;
+        }
+    }
+    .logo {
+        width: 22rem;
+        height: 5rem;
+        transition: all .5s;
+        a { 
+            color: #212121;
+            text-decoration: none;
+            font-size: 3.2rem;
+            font-weight: bold;
+            background: url('../images/logo.png') no-repeat;
+            background-size: 100%;
+            text-indent: -9999px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .usa-nav {
+        padding: 0;
+        .usa-nav-link {
+            padding: 1.3rem 1.5rem;
+            &:hover {
+                color: $primary;
+                span {
+                    border-bottom-color: $primary;
+                }
+            }
+        }
+    }
+}
+

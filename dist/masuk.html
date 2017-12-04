@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NGEDAP | Masuk</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class="layout-demo">
+        <header class="usa-header usa-header-basic header--one sticky" role="banner">
+            <div class="usa-nav-container scrolled">
+                <!-- <div class="usa-logo" id="basic-logo">
+                    <em class="usa-logo-text">
+                    <a href="/" title="Home" aria-label="Home">
+                        NGEDAP
+                    </a>
+                    </em>
+                </div>
+             -->
+                <div class="logo">
+                    <a href="/" title="Home" aria-label="Home">
+                        NGEDAP
+                    </a>
+                </div>
+                <nav role="navigation" class="usa-nav">
+                    <ul class="usa-nav-primary ">
+                        <!-- <li>
+                            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="basic-nav-section-one">
+                                <span>Section title</span>
+                            </button>
+                            <ul id="basic-nav-section-one" class="usa-nav-submenu" aria-hidden="true">
+                                <li>
+                                    <a href="#">Subsection title</a>
+                                </li>
+                                <li>
+                                    <a href="#">Subsection title</a>
+                                </li>
+                                <li>
+                                    <a href="#">Subsection title</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <a class="usa-nav-link" href="daftar.html">
+                                <span>Daftar</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <form class="usa-search usa-search-small ">
+                        <div role="search">
+                            <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
+                            <input id="basic-search-field-small" type="search" name="search">
+                            <button type="submit">
+                                <span class="usa-sr-only">Search</span>
+                            </button>
+                        </div>
+                    </form> -->
+                </nav>
+            </div>
+        </header>
+
+        <div class="usa-overlay"></div>
+
+        <main id="main-content">
+
+
+            <section class="usa-hero overlayed">
+                <div class="usa-grid">
+                    <h1 class="text-center hero__lead">Belajar DAP menyenangkan!</h1>
+                </div>
+            </section>
+
+
+            <section class="usa-grid usa-section">
+                    <div class="panel">
+                        <form class="usa-form mx-auto">
+                            <fieldset>
+                                <legend class="usa-drop_text">Masuk</legend>
+                                <span>atau <a href="daftar.html">daftarkan diri kamu</a></span>
+                            
+                                <label for="sign-in-username">Alamat email</label>
+                                <input id="sign-in-username" name="username" type="text" autocapitalize="off" autocorrect="off">
+                            
+                                <label for="sign-in-password">Kata sandi</label>
+                                <input id="sign-in-password" name="password" type="password">
+                                <!-- <p class="usa-form-note">
+                                <a title="Show password" href="javascript:void(0);"
+                                    class="usa-show_password"
+                                    aria-controls="sign-in-password">
+                                    Show password</a>
+                                </p> -->
+                            
+                                <input type="submit" value="Masuk" class="usa-button">
+                            
+                                <p><a href="javascript:void(0);" title="Forgot password">
+                                Lupa kata sandi?</a></p>
+                            
+                            </fieldset>
+                        </form>
+                </div>
+            </section>
+
+
+            
+        </main>
+
+
+
+
+    <!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+    <script src="bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            var scrollTop = 0;
+            $(window).scroll(function(){
+                scrollTop = $(window).scrollTop();
+                // $('.counter').html(scrollTop);
+                console.log(scrollTop);
+                if (scrollTop >= 100) {
+                    $('header').addClass('scrolled');
+                } else if (scrollTop < 97) {
+                    $('header').removeClass('scrolled');
+                } 
+                
+            }); 
+        });
+    </script>
+  </body>
+</html>

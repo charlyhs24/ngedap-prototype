@@ -1,0 +1,13 @@
+.usa-button {
+    background-color: $primary !important;
+    &:hover {
+        background-color: darken($primary, 5) !important;
+    }
+    &:active {
+        background-color: darken($primary, 7) !important;
+    }
+    &:focus {
+        outline: 2px dotted #aeb0b5;
+        outline-offset: 3px;
+    }
+}

@@ -1,0 +1,24 @@
+.usa-hero {
+    background: url('../images/hero-banner.png') repeat-x;
+    background-position-y: 90%;
+    position: relative;
+    .usa-hero-callout {
+        float: right;
+    }
+    &.overlayed {
+        .usa-grid {
+            position: relative;
+            z-index: 1;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .6;
+            z-index: 0;
+            background-color: white;
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+a:not(.usa-button) {
+    color: $primary !important;
+    &:hover {
+        color: darken($primary, 5) !important;
+    }
+    &:active {
+        color: darken($primary, 7) !important;
+    }
+    &:focus {
+        outline: 2px dotted #aeb0b5;
+        outline-offset: 3px;
+    }
+}
