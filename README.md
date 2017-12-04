@@ -1,5 +1,13 @@
-# webpack-static-playground
-Playing around with Webpack to build static website
+# Prototype NGEDAP
 
-- Clone the repo: `git clone https://github.com/kukuh-sulistyo/webpack-static-playground.git`
-- Install dependencies with [npm](https://www.npmjs.com/): `npm install`
+## Getting Started
+This programs running on node, make sure you have node installed
+
+## Install depedencies
+```
+npm install
+```
+## Running
+```
+npm run start
+```
